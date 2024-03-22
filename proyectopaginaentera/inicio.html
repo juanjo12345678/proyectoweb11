@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+<title>Login and Register</title>
+
+</head>
+<body>
+
+<div class="container">
+  <div id="login-form">
+    <h2>Login</h2>
+    <form action="/login" method="post">
+      <input type="text" placeholder="Username" name="username" required>
+      <input type="password" placeholder="Password" name="password" required>
+      <input type="submit" value="Login">
+    </form>
+    <button class="toggle-button" onclick="toggleForm()">Register</button>
+  </div>
+  <div id="register-form" style="display: none;">
+    <h2>Register</h2>
+    <form action="/register" method="post">
+      <input type="text" placeholder="Username" name="username" required>
+      <input type="password" placeholder="Password" name="password" required>
+      <input type="submit" value="Register">
+    </form>
+    <button class="toggle-button" onclick="toggleForm()">Login</button>
+  </div>
+</div>
+<div class="top-images">
+  <img src="../IMG/bugatti-3974383_1920.jpg" alt="bugati" width="1000%" height="300">
+    <img src="../IMG/bugatti-4266895_1920.jpg" alt="Image 2">
+    <img src="../IMG/car-3198456_1920.jpg" alt="Image 3">
+  </div>
+<script src="script.js"></script>
+<footer>
+    
+
+</footer>
+</body>
+</html>
